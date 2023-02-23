@@ -140,7 +140,8 @@ header {
 /*FOOTER*/
 
 .rodape {
-    margin-top: 64px ;
+    margin-top: 87px ;
+    margin-bottom: 0;
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
