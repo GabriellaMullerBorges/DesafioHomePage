@@ -1,0 +1,425 @@
+/* Importação de fonte via Google Fonts --------- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+/* Reset básico --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body --------- */
+body {
+    background-color: #33475B;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Header --------- */
+header {
+    height: 80px;
+    background-color: #FFFFFF;
+    display: flex;
+    width: 100% ;
+}
+
+.container-elementos-header {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo-principal {
+    font-size: 24px;
+    color: #0000EE;
+    font-weight: 400;
+}
+
+.label-pesquisa {
+    background-color: #DB1E8C;
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+}
+
+.input-pesquisa {
+    background-color: transparent;
+    padding: 4px;
+    border: none;
+}
+
+::placeholder {
+    color: #FF97D3;
+}
+
+
+/*CARDS*/
+.cards{
+    display:flex;
+    justify-content: center;
+}
+
+.trilhas{
+    width: 1304px;
+    display:flex;
+}
+
+.trilhas_cards {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.card-inside-container{
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    width:400px;
+    height: 445px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+.card__titulo{
+    color: #364372;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.card_texto{
+    display:block;
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: left;
+    line-height: 21px;
+    margin-left: 32px;
+}
+
+.card__texto-ultimo{
+    display: flex;
+    flex-grow: 1;
+}
+
+.button{
+    border: 1px solid #264FEC;
+    box-sizing: border-box;
+    width: 138px;
+    height: 47px;
+    display: flex;
+    font-family: 'IBM Plex Sans';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    color: #264FEC;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*FOOTER*/
+
+.rodape {
+    margin-top: 64px ;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.rodape_conteudo {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.organizacao_footer{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.logos_empresas_parceiras{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ #logo_alura{
+    height: 38px;
+    width: 85px;    
+ }
+
+.rodape__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style:none;
+}
+#texto-grupo-boticario{
+    flex-direction: column;
+}
+
+
+.rodape__programa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: style none;
+}
+
+.rodape_programa_lista{
+    list-style: none;
+}
+
+
+.rodape__programa_item{
+    list-style: none;
+    padding-right: 1em;
+    text-decoration: none;
+    color: #000000;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.rodape__midia {
+    display: block;
+    width: 42px;
+    height: 42px;
+    list-style: none;
+}
+
+
+
+/*RESPONSIVIDADE*/
+
+
+
+@media screen and (min-width: 768px) {
+    .cartao {
+        max-width: 400px;
+    }
+    .container-elementos-header{
+        justify-content: space-evenly ;
+    }
+
+    .rodape{
+        max-height: 444px;
+        height: fit-content;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .rodape_conteudo{
+        width: 100%;
+    }
+
+    .organizacao_footer{
+        width: fit-content;
+        justify-content: space-evenly;
+        align-items: stretch;
+        padding-top: 1em;
+    }  
+
+}
+
+@media screen and (min-width: 1024px) {
+    .planos__cartoes {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .cartao {
+        max-width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    
+    header {
+        width: 100%;
+    }
+
+    .titulo-principal {
+        font-size: 18px;
+    }
+
+    .label-pesquisa {
+    
+        height: 35px;
+        gap: 2px;
+        max-width: 150px ;
+    }
+    .cartao {
+        max-width: 400px;
+    }
+    .container-elementos-header{
+        justify-content: space-evenly ;
+    }
+
+    .rodape{
+        max-height: 444px;
+        height: fit-content;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .rodape_conteudo{
+        width: 100%;
+    }
+
+    .organizacao_footer{
+        width: fit-content;
+        justify-content: space-evenly;
+        align-items: stretch;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+
+}
+
+@media screen and (max-width: 413px) {
+   
+    header {
+        padding: 1em 0 1em 0;
+        width: 100%;
+        max-width: max-content;
+    }
+    
+    .titulo-principal {
+       display:none;
+    }
+
+    .label-pesquisa {
+        height: 35px;
+        gap: 2px;
+    }
+
+    .cartao {
+        max-width: max-content;
+        align-self: center;
+
+    }
+
+    .container-elementos-header{
+        justify-content: space-evenly ;
+    }
+
+    .card__titulo{
+        text-align: center;
+    }
+
+    .rodape{
+        max-height: 444px;
+        height: fit-content;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .organizacao_footer{
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: stretch;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+
+}
+
+@media screen and (max-width: 300px) {
+   
+    header {
+        padding: 1em 0 1em 0;
+    }
+    
+    .titulo-principal {
+       display:none;
+    }
+
+    .label-pesquisa {
+        height: 35px;
+        gap: 2px;
+    }
+
+    .card-inside-container{
+        border-radius: 0;
+        width:100%;
+        height:max-content;
+        padding: 10px;
+    }
+
+    .cartao {
+        max-width: 270px;
+        align-self: center;
+    }
+    .container-elementos-header{
+        justify-content: space-evenly ;
+    }
+
+    .card__titulo{
+        text-align: center;
+    }
+
+    .rodape{
+
+        height: fit-content;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .card_texto .card__texto-ultimo {
+        font-size: 12px;
+        max-width: 70%;
+    }
+
+    .card__texto-ultimo {
+       padding-bottom: 15px;
+    }
+
+    .organizacao_footer{
+        width: 80%;
+        justify-content: space-evenly;
+        align-items: stretch;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+
+}
