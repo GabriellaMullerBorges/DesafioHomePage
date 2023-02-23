@@ -285,6 +285,12 @@ header {
         gap: 2px;
         max-width: 150px ;
     }
+
+    .trilhas{
+        width: 100%;
+        display:flex;
+    }
+
     .cartao {
         max-width: 400px;
     }
@@ -331,8 +337,13 @@ header {
         gap: 2px;
     }
 
+    .trilhas{
+        width: 100%;
+        display:flex;
+    }
+
     .cartao {
-        max-width: max-content;
+        width:80%;
         align-self: center;
 
     }
@@ -359,9 +370,8 @@ header {
         padding-top: 1em;
         padding-bottom: 1em;
     }
-
-
 }
+
 
 @media screen and (max-width: 300px) {
    
@@ -378,17 +388,22 @@ header {
         gap: 2px;
     }
 
+    .trilhas{
+        width: 100%;
+    }
     .card-inside-container{
         border-radius: 0;
         width:100%;
         height:max-content;
-        padding: 10px;
+        padding: 15px;
+        text-align: justify;
     }
 
     .cartao {
         max-width: 270px;
         align-self: center;
     }
+    
     .container-elementos-header{
         justify-content: space-evenly ;
     }
