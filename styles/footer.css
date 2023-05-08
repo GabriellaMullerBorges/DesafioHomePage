@@ -1,0 +1,85 @@
+/*FOOTER*/
+
+.rodape {
+    margin-top: 87px ;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.rodape_conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.organizacao_footer{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.logos_empresas_parceiras{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ #logo_alura{
+    height: 38px;
+    width: 85px;    
+ }
+
+.rodape__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style:none;
+}
+#texto-grupo-boticario{
+    flex-direction: column;
+}
+
+
+.rodape__programa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: style none;
+}
+
+.rodape_programa_lista{
+    list-style: none;
+}
+
+
+.rodape__programa_item{
+    list-style: none;
+    padding-right: 1em;
+    text-decoration: none;
+    color: #000000;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.rodape__midia {
+    display: block;
+    width: 42px;
+    height: 42px;
+    list-style: none;
+}

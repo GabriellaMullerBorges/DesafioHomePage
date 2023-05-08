@@ -1,0 +1,15 @@
+/* Importação de fonte via Google Fonts --------- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+/* Reset básico --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body --------- */
+body {
+    background-color: #33475B;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
